@@ -1,5 +1,5 @@
 import numpy as np
-from source.timestepping import timeloop, forward_euler
+from source.timestepping import *
 from source.models import SIR
 
 
