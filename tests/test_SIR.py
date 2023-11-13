@@ -1,5 +1,5 @@
 import numpy as np
-from source.timestepping import *
+from source.timestepping import timeloop, forward_euler
 from source.models import SIR
 
 
@@ -17,5 +17,5 @@ def run_SIR():
 def test_Imax():
 
     t, y = run_SIR()
-    Imax = y[:,1].max()
+    Imax = y[:, 1].max()
     assert Imax > 14e6 and Imax < 15e6
